@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="historyManagement">
+    <class name="History" table="HISTORIES">
+        <id name="id" column="id" type="long" unsaved-value="undefined">
+            <generator class="increment" />
+        </id>
+        
+        <property name="mediaTitle" column="mediaTitle" type="string" />  
+        <property name="mediaKey" column="mediaKey" type="string" />  
+        <property name="mediaDate" column="mediaDate" type="calendar" />  
+        
+        <property name="subsFirstName" column="subsFirstName" type="string" />  
+        <property name="subsLastName" column="subsLastName" type="string" />  
+        <property name="subsInscriptionDate" column="subsInscriptionDate" type="calendar" />  
+        <property name="subsBornDate" column="subsBornDate" type="calendar" />
+        <property name="subsNumber" column="subsNumber" type="long" />  
+        
+        <property name="exemplary" column="exemplary" type="integer" />  
+        <property name="loanDate" column="loanDate" type="calendar" />  
+        <property name="loanReturnDate" column="loanReturnDate" type="calendar" />  
+        
+                 
+        
+        <list name="mediaMakers" table="MEDIAMAKERS" >
+           <key column="history_id"/>
+           <list-index column="sortOrder"/>
+           <element column="name" type="string"/>
+        </list>
+   
+    </class>
+</hibernate-mapping>

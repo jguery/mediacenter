@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="bookingsManagement">
+    <class name="Booking" table="BOOKINGS">
+        <id name="id" column="id" type="long" unsaved-value="undefined">
+            <generator class="increment" />
+        </id>
+        
+        <property name="accounted" column="accounted" type="boolean" />   
+        <property name="bookingDate" column="bookingDate" type="calendar" />   
+        <property name="cancelDate" column="cancelDate" type="calendar" />
+        
+        <many-to-one name="media" class="mediasManagement.Media" column="media" />
+        
+        <many-to-one name="booker" column="booker" class="subscribersManagement.Subscriber" />
+        
+    </class>
+</hibernate-mapping>

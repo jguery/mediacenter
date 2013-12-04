@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="subscribersManagement">
+    <class name="Subscriber" table="SUBSCRIBERS">
+        <id name="number" column="number" type="long" unsaved-value="undefined">
+            <generator class="increment" />
+        </id>
+        
+        <property name="firstName" column="firstName" type="string" />   
+        <property name="lastName" column="lastName" type="string" />   
+        <property name="bornDate" column="bornDate" type="calendar" />
+        <property name="inscriptionDate" column="inscriptionDate" type="calendar" />
+        <property name="getRightsDate" column="getRightsDate" type="calendar" />
+        
+        <bag name="currentLoans" inverse="true" lazy="false">
+            <key column="lender" />
+            <one-to-many class="loansManagement.Loan" />
+        </bag>
+        
+        <bag name="currentBookings" inverse="true" lazy="false" cascade="delete-orphan">
+            <key column="booker" />
+            <one-to-many class="bookingsManagement.Booking" />
+        </bag>
+        
+    </class>
+</hibernate-mapping>

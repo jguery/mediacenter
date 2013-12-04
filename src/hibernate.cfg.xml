@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Connexion à la base de donnees -->
+        
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql://localhost:54321/hibernate_testMedia</property>
+        <property name="connection.username">bdd1</property>
+        <property name="connection.password">bdd1</property>
+        
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name="connection.pool_size">1</property>
+    
+        <!-- Dialecte SQL utilise -->
+        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+    
+        <!-- Enable Hibernate's automatic session context management -->
+        <property name="current_session_context_class">thread</property>
+
+        <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+        
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+        
+        <!-- Effacement et re-creation du schéma de la base au lancement de l'application -->
+        <!-- <property name="hbm2ddl.auto">create</property> -->
+        
+        <!-- fichiers de correspondance (mapping) entre les classes et Hibernate -->
+        <mapping resource="mediasManagement/Media.hbm.xml" />
+        <mapping resource="loansManagement/Loan.hbm.xml" />
+        <mapping resource="bookingsManagement/Booking.hbm.xml" />
+        <mapping resource="subscribersManagement/Subscriber.hbm.xml" />
+        <mapping resource="historyManagement/History.hbm.xml" />
+
+    </session-factory>
+</hibernate-configuration>

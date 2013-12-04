@@ -1,0 +1,227 @@
+body
+{
+   width: 1250px;
+   margin: auto;
+   margin-top: 20px;
+   margin-bottom: 20px;    
+   background-color:#bad5db;
+   color:#7c8c9c;
+   font-family: Arial, Verdana, serif;
+}
+
+a
+{
+   font-weight: bold;
+   color: #7d8d9d;
+   text-decoration: none;
+}
+
+a:hover
+{
+   color: #23609d;
+}
+
+
+#en_tete
+{
+   width: 150px;
+   height: 110px;
+   background-image: url("images/logolib.jpg");
+   background-repeat: no-repeat;
+   margin-bottom: 0px;
+}
+
+.barre_haut
+{
+	float: right;
+	width: 200px;
+	text-align:right;
+	margin-right:10px;
+}
+
+.barre_haut a
+{
+   color:#505962;
+   font-size:14pt;
+   font-weight: bold;
+   text-decoration:none;
+}
+
+.barre_haut a:hover
+{
+   color: #23609d;
+}
+
+/* Le menu */
+
+#menu
+{
+   text-align:right;
+   float: left;
+   width: 270px;
+   margin-top:30px;
+   margin-left:0px;
+}
+
+.element_menu
+{
+   /*background-color: #626262;
+   background-image: url("images/motif.png");
+   background-repeat: repeat-x;
+   
+   border: 2px solid black;*/
+   
+   margin-bottom: 20px;
+}
+
+
+/* Quelques effets sur les menus */
+
+
+.element_menu h3
+{    
+   color: #B3B3B3;
+   font-family: Arial, "Arial Black", "Times New Roman", Times, serif;
+   text-align: center;
+}
+
+.element_menu ul
+{
+   list-style-type: none;
+   padding: 0px;
+   padding-left: 0px;
+   margin: 0px;
+   margin-bottom: 5px;
+}
+
+
+
+.element_menu li
+{
+   /*margin-bottom:15px;*/
+}
+
+.element_menu a
+{
+   color: #000000;
+   font-size:14pt;
+   font-weight: bold;
+   text-decoration:none;
+}
+
+.element_menu a:hover
+{
+   color: #ffffff;
+   background-color:#000000;
+}
+
+
+/* Le corps de la page */
+
+#corps
+{
+   margin-left: 270px;
+   margin-bottom: 20px;
+   padding: 5px;
+
+   
+   /*color: #B3B3B3;
+   background-image: url("images/mid.png");
+   background-repeat: repeat-y;
+  
+   border: 2px solid black;*/
+}
+
+#corps h1
+{
+   height: 28px;
+   width:975px;
+   background-image: url("images/top-body.png");
+   text-align: center;
+   font-family: Arial, "Arial Black", "Times New Roman", Times, serif;
+   margin-bottom: 0px;
+   margin-top: 20px;
+
+}
+
+#corps h2
+{
+   height: 30px;
+
+   background-image: url("images/titre.png");
+   background-repeat: no-repeat;
+   
+   padding-left: 30px;
+   color: #B3B3B3;
+   text-align: left;
+}
+
+#corps h4
+{
+   height: 28px;
+   background-image: url("images/bot-body.png");
+   text-align: center;
+   font-family: Arial, "Arial Black", "Times New Roman", Times, serif;
+   margin-bottom:0px;
+   margin-top: 0px;
+
+}
+
+#corps strong
+{
+   color:#a00000;
+}
+
+#corps h3
+{
+   font-size:16pt; 
+   padding-left:25px; 
+}
+
+
+.interieur_corps
+{
+   background-image: url("images/mid.png");
+   background-repeat: repeat;
+   margin-bottom: 0px;
+   margin-top: 0px;
+   padding: 25px;
+   padding-top:5px;
+   text-align:justify;
+}
+
+input{ 
+  font-family:TrebuchetMS; 
+  font-size:9pt; 
+  font-weight:bold; 
+  background-color:#336699;
+  border-color:#336699; 
+  border-style:inset; 
+  border-width:2px; 
+  color:#FFFFFF; 
+}
+
+legend {
+	color:#7d8d9d;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-left:5px;
+}
+
+/* Le pied de page (qui se trouve tout en bas, en gÃ©nÃ©ral pour les copyrights) */
+
+#pied_page
+{
+   padding: 5px;
+   clear: both;
+
+   text-align: center;
+
+   /*color: #B3B3B3;
+   background-color: #626262;
+   background-image: url("images/motif.png");
+   background-repeat: repeat-x;
+   
+   border: 2px solid black;*/
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="mediasManagement">
+    <typedef name="typeMedia" class="utils.GenericEnumUserType">
+        <param name="enumClass">mediasManagement.TypeMedia</param>
+    </typedef>
+    <class name="Media" table="MEDIAS">
+        <id name="key" column="key" type="string" unsaved-value="undefined" />
+        
+        <property name="title" column="title" type="string" length="150" />   
+        <property name="exempTotal" column="exempTotal" type="int" />   
+        <property name="exempDispo" column="exempDispo" type="int" />   
+        <property name="currentMaxExemplary" column="currentMaxExemplary" type="int" />   
+        <property name="bookedExemplaries" column="bookedExemplaries" type="int" />   
+        <property name="type" column="type" type="typeMedia" />
+        
+        <!--  Map the map of exemplaries, with key:number, value:loan
+              the attribute cascade allows the deletion or addition of a media without having to
+              manually add or delete its associated loans -->
+        <map name="tabExemplaries" table="TABEXEMPLARIES" lazy="false" cascade="persist,delete-orphan">
+		    <key column="id"/>
+		    <index column="number" type="integer"/>
+		    <many-to-many column="loan" class="loansManagement.Loan" />
+        </map>
+        
+        
+        <joined-subclass name="DVD" table="DVDS">
+            <key column="dvd_id"/>
+            <property name="outDate" column="outDate" type="calendar" />
+            <list name="directors" table="DIRECTORS" lazy="false">
+			   <key column="DVD_id"/>
+			   <list-index column="sortOrder"/>
+			   <element column="name" type="string"/>
+            </list>
+        </joined-subclass>
+        
+        <joined-subclass name="Book" table="BOOKS">
+            <key column="book_id"/>
+            <property name="editionDate" column="editionDate" type="calendar" />
+            <list name="authors" table="AUTHORS" lazy="false">
+               <key column="book_id"/>
+               <list-index column="sortOrder"/>
+               <element column="name" type="string"/>
+            </list>
+        </joined-subclass>
+        
+    </class>
+</hibernate-mapping>

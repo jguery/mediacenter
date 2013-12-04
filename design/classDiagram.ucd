@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="classDiagram" size="2038,1891" id="" metadata="uml2-1.0" initialized="true" zoom="0.5" scrolledX="-45" scrolledY="278" tag="1000" key="32303037303533312D31303030206C69627261727976342E312F726F6F74">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.14/@sourceConnections.0 //@children.1/@sourceConnections.1" name="Subscriber" location="699,720" size="291,495" id="subscribersManagement/Subscriber" runTimeClassModel="lastName,inscriptionDate,Subscriber(),number,toHTML(Ljava.util.List;),sendMessage(Ljava.lang.String;),book(LbookingsManagement.Booking;),Subscriber(Ljava.lang.String;Ljava.lang.String;Ljava.util.Calendar;Ljava.util.Calendar;),toHtml(),toString(),lend(LloansManagement.Loan;),setNumber(J),hasRights(),returnMedia(LloansManagement.Loan;),yearSinceIns(),isAChild(),bornDate,existingLoans(),Subscriber(J),equals(Ljava.lang.Object;),getRightsDate,canLendOrBook(LmediasManagement.TypeMedia;),firstName,getSubscriberHeader()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="158,108">
+      <children xsi:type="editmodel:AttributeEditModel" name="lastName" id="subscribersManagement/Subscriber#lastName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="number" id="subscribersManagement/Subscriber#number"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="firstName" id="subscribersManagement/Subscriber#firstName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bornDate" id="subscribersManagement/Subscriber#bornDate"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="inscriptionDate" id="subscribersManagement/Subscriber#inscriptionDate"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="getRightsDate" id="subscribersManagement/Subscriber#getRightsDate"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="268,324">
+      <children xsi:type="editmodel:MethodEditModel" name="equals" id="subscribersManagement/Subscriber#equals(Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Subscriber" id="subscribersManagement/Subscriber#Subscriber(J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="existingLoans" id="subscribersManagement/Subscriber#existingLoans()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="lend" id="subscribersManagement/Subscriber#lend(LloansManagement.Loan;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="returnMedia" id="subscribersManagement/Subscriber#returnMedia(LloansManagement.Loan;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Subscriber" id="subscribersManagement/Subscriber#Subscriber(Ljava.lang.String;Ljava.lang.String;Ljava.util.Calendar;Ljava.util.Calendar;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="canLendOrBook" id="subscribersManagement/Subscriber#canLendOrBook(LmediasManagement.TypeMedia;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isAChild" id="subscribersManagement/Subscriber#isAChild()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="yearSinceIns" id="subscribersManagement/Subscriber#yearSinceIns()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="subscribersManagement/Subscriber#toString()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="book" id="subscribersManagement/Subscriber#book(LbookingsManagement.Booking;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="sendMessage" id="subscribersManagement/Subscriber#sendMessage(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="hasRights" id="subscribersManagement/Subscriber#hasRights()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Subscriber" id="subscribersManagement/Subscriber#Subscriber()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setNumber" id="subscribersManagement/Subscriber#setNumber(J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSubscriberHeader" id="subscribersManagement/Subscriber#getSubscriberHeader()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toHTML" id="subscribersManagement/Subscriber#toHTML(Ljava.util.List;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toHtml" id="subscribersManagement/Subscriber#toHtml()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="java.util/ArrayList@currentLoans+subscribersManagement/Subscriber@lender" source="//@children.0" target="//@children.1" targetEnd="//@children.0/@sourceConnections.0/@children.2" label="//@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="lender" location="0,299" id="java.util/ArrayList@currentLoans+subscribersManagement/Subscriber@lender|subscribersManagement/Subscriber#lender" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="currentLoans" location="243,90" id="java.util/ArrayList@currentLoans+subscribersManagement/Subscriber@lender|java.util/ArrayList#currentLoans" multiplicityLabel="//@children.0/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.0/@sourceConnections.0/@children.2/@children.0" navigable="true" orderingKind="1">
+        <children xsi:type="editmodel:LabelEditModel" name=" - currentLoans" location="493,1491" size="82,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="493,1464" size="5,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Visibility" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.0" name="Loan" location="240,1394" size="246,261" id="loansManagement/Loan" runTimeClassModel="Loan(Z),id,createLoan(LsubscribersManagement.Subscriber;LmediasManagement.Media;),toHTML(),exemplary,voidLoan,equals(Ljava.lang.Object;),Loan(),returnMedia(),getLoanHeader(),returnDate,toString()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="134,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="returnDate" id="loansManagement/Loan#returnDate"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="exemplary" id="loansManagement/Loan#exemplary"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="voidLoan" id="loansManagement/Loan#voidLoan"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="loansManagement/Loan#id"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="223,126">
+      <children xsi:type="editmodel:MethodEditModel" name="equals" id="loansManagement/Loan#equals(Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="returnMedia" id="loansManagement/Loan#returnMedia()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Loan" id="loansManagement/Loan#Loan(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toHTML" id="loansManagement/Loan#toHTML()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Loan" id="loansManagement/Loan#Loan()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="createLoan" id="loansManagement/Loan#createLoan(LsubscribersManagement.Subscriber;LmediasManagement.Media;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLoanHeader" id="loansManagement/Loan#getLoanHeader()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="mediasManagement/Media@media+loansManagement/Loan@loans" source="//@children.1" target="//@children.8" targetEnd="//@children.1/@sourceConnections.0/@children.1" label="//@children.1/@sourceConnections.0/@children.2" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="loans" location="246,24" id="mediasManagement/Media@media+loansManagement/Loan@loans|loansManagement/Loan#loans" attachSource="true" orderingLabel="//@children.1/@sourceConnections.0/@children.0/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" name="{order}" location="493,1425" size="43,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="media" location="262,336" id="mediasManagement/Media@media+loansManagement/Loan@loans|mediasManagement/Media#media" multiplicityLabel="//@children.1/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name="- media" location="455,848" size="41,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="455,875" size="20,13" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="subscribersManagement/Subscriber@lender+loansManagement/Loan@currentLoans" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.1/@children.2" label="//@children.1/@sourceConnections.1/@children.0" sourceEnd="//@children.1/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="currentLoans" location="109,-1" id="subscribersManagement/Subscriber@lender+loansManagement/Loan@currentLoans|loansManagement/Loan#currentLoans" attachSource="true" orderingKind="1"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="lender" location="134,494" id="subscribersManagement/Subscriber@lender+loansManagement/Loan@currentLoans|subscribersManagement/Subscriber#lender" multiplicityLabel="//@children.1/@sourceConnections.1/@children.2/@children.1" roleLabel="//@children.1/@sourceConnections.1/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - lender" location="839,1221" size="45,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="805,1221" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Library" location="614,134" size="341,549" id="main/Library" runTimeClassModel="createDataTest(),addExemplary(Ljava.lang.String;),main([Ljava.lang.String;),printLoanHistoryHTML(),listMediasHTML(),listLoansHTML(),listSubscribersHTML(),lockBookings,isAMedia(LmediasManagement.Media;),delExemplary(Ljava.lang.String;),lookForSubscriber(Ljava.lang.String;Ljava.lang.String;Ljava.util.Calendar;),listBookings(),addSubscriber(LsubscribersManagement.Subscriber;),listSubscribers(),addMedia(LmediasManagement.Media;),returnMedia(Ljava.lang.String;I),listBookingsHTML(),lend(Ljava.lang.String;J),listMedias(),book(Ljava.lang.String;J),Library(),deleteSubscriber(J),lookForSubscriberLastname(Ljava.lang.String;),listLoans(),session,printLoanHistory(),deleteMedia(Ljava.lang.String;),lookForMediaTitle(Ljava.lang.String;),isASubscriber(LsubscribersManagement.Subscriber;),lookForMedia(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="123,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="lockBookings" id="main/Library#lockBookings"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="session" id="main/Library#session"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="318,450">
+      <children xsi:type="editmodel:MethodEditModel" name="addMedia" id="main/Library#addMedia(LmediasManagement.Media;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addSubscriber" id="main/Library#addSubscriber(LsubscribersManagement.Subscriber;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="deleteMedia" id="main/Library#deleteMedia(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="deleteSubscriber" id="main/Library#deleteSubscriber(J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="listLoansHTML" id="main/Library#listLoansHTML()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="listSubscribers" id="main/Library#listSubscribers()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="returnMedia" id="main/Library#returnMedia(Ljava.lang.String;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isAMedia" id="main/Library#isAMedia(LmediasManagement.Media;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isASubscriber" id="main/Library#isASubscriber(LsubscribersManagement.Subscriber;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="lookForSubscriber" id="main/Library#lookForSubscriber(Ljava.lang.String;Ljava.lang.String;Ljava.util.Calendar;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="lookForMedia" id="main/Library#lookForMedia(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addExemplary" id="main/Library#addExemplary(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="delExemplary" id="main/Library#delExemplary(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="listMedias" id="main/Library#listMedias()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="listBookingsHTML" id="main/Library#listBookingsHTML()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Library" id="main/Library#Library()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="createDataTest" id="main/Library#createDataTest()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="book" id="main/Library#book(Ljava.lang.String;J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="lend" id="main/Library#lend(Ljava.lang.String;J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="printLoanHistory" id="main/Library#printLoanHistory()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="lookForMediaTitle" location="19,240" id="main/Library#lookForMediaTitle(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="printLoanHistoryHTML" id="main/Library#printLoanHistoryHTML()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="listMediasHTML" id="main/Library#listMediasHTML()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="lookForSubscriberLastname" id="main/Library#lookForSubscriberLastname(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="listSubscribersHTML" id="main/Library#listSubscribersHTML()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="subscribersManagement/SubscriberManager@subscriberManager+main/Library@library" source="//@children.2" target="//@children.23" targetEnd="//@children.2/@sourceConnections.0/@children.2" label="//@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="library" location="251,0" id="subscribersManagement/SubscriberManager@subscriberManager+main/Library@library|main/Library#library" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="subscriberManager" location="98,170" id="subscribersManagement/SubscriberManager@subscriberManager+main/Library@library|subscribersManagement/SubscriberManager#subscriberManager" multiplicityLabel="//@children.2/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.2/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - subscriberManager" location="730,91" size="115,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="859,91" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="bookingsManagement/BookingManager@bookingManager+main/Library@library" source="//@children.2" target="//@children.22" targetEnd="//@children.2/@sourceConnections.1/@children.2" label="//@children.2/@sourceConnections.1/@children.0" sourceEnd="//@children.2/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="library" location="340,12" id="bookingsManagement/BookingManager@bookingManager+main/Library@library|main/Library#library" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="bookingManager" location="109,188" id="bookingsManagement/BookingManager@bookingManager+main/Library@library|bookingsManagement/BookingManager#bookingManager" multiplicityLabel="//@children.2/@sourceConnections.1/@children.2/@children.1" roleLabel="//@children.2/@sourceConnections.1/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - bookingManager" location="1115,97" size="102,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1081,97" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="loansManagement/LoanManager@loanManager+main/Library@library" source="//@children.2" target="//@children.20" targetEnd="//@children.2/@sourceConnections.2/@children.2" label="//@children.2/@sourceConnections.2/@children.0" sourceEnd="//@children.2/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="library" location="81,0" id="loansManagement/LoanManager@loanManager+main/Library@library|main/Library#library" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="loanManager" location="138,135" id="loansManagement/LoanManager@loanManager+main/Library@library|loansManagement/LoanManager#loanManager" multiplicityLabel="//@children.2/@sourceConnections.2/@children.2/@children.1" roleLabel="//@children.2/@sourceConnections.2/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - loanManager" location="499,55" size="82,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="595,55" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="mediasManagement/MediaManager@mediaManager+main/Library@library" source="//@children.2" target="//@children.19" targetEnd="//@children.2/@sourceConnections.3/@children.2" label="//@children.2/@sourceConnections.3/@children.0" sourceEnd="//@children.2/@sourceConnections.3/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="library" location="0,10" id="mediasManagement/MediaManager@mediaManager+main/Library@library|main/Library#library" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="mediaManager" location="167,134" id="mediasManagement/MediaManager@mediaManager+main/Library@library|mediasManagement/MediaManager#mediaManager" multiplicityLabel="//@children.2/@sourceConnections.3/@children.2/@children.1" roleLabel="//@children.2/@sourceConnections.3/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - mediaManager" location="217,39" size="92,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="323,39" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="historyManagement/HistoryManager@historyManager+main/Library@library" source="//@children.2" target="//@children.26" targetEnd="//@children.2/@sourceConnections.4/@children.1" label="//@children.2/@sourceConnections.4/@children.2" sourceEnd="//@children.2/@sourceConnections.4/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="library" location="341,103" id="historyManagement/HistoryManager@historyManager+main/Library@library|main/Library#library" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="historyManager" location="0,58" id="historyManagement/HistoryManager@historyManager+main/Library@library|historyManagement/HistoryManager#historyManager" multiplicityLabel="//@children.2/@sourceConnections.4/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.4/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - historyManager" location="1052,216" size="95,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1127,243" size="20,13" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="SubscriberExistsException" location="1562,420" size="244,43" id="exceptions/SubscriberExistsException" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Constraints" location="-84,32" size="175,233" id="main/Constraints" runTimeClassModel="maxDVDLENTTHEN,bookingDELAY,maxBOOKLENTCHILD,maxBOOKLENT2ND,loanDELAY,maxDVDLENT1ST,maxDVDLENTCHILD,maxBOOKLENT1ST,maxDVDLENT2ND,maxBOOKLENTTHEN">
+    <children xsi:type="editmodel:CompartmentEditModel" size="152,180">
+      <children xsi:type="editmodel:AttributeEditModel" name="maxDVDLENTTHEN" id="main/Constraints#maxDVDLENTTHEN"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="maxBOOKLENTCHILD" id="main/Constraints#maxBOOKLENTCHILD"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanDELAY" id="main/Constraints#loanDELAY"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="maxBOOKLENT2ND" id="main/Constraints#maxBOOKLENT2ND"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="maxDVDLENT1ST" id="main/Constraints#maxDVDLENT1ST"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="maxBOOKLENT1ST" id="main/Constraints#maxBOOKLENT1ST"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="maxDVDLENTCHILD" id="main/Constraints#maxDVDLENTCHILD"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="maxDVDLENT2ND" id="main/Constraints#maxDVDLENT2ND"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="maxBOOKLENTTHEN" id="main/Constraints#maxBOOKLENTTHEN"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bookingDELAY" id="main/Constraints#bookingDELAY"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="SubscriberWithLoansException" location="1562,293" size="278,43" id="exceptions/SubscriberWithLoansException" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="LentOrBookedMediaException" location="1557,82" size="269,81" id="exceptions/LentOrBookedMediaException" runTimeClassModel="LentOrBookedMediaException(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="226,18">
+      <children xsi:type="editmodel:MethodEditModel" name="LentOrBookedMediaException" id="exceptions/LentOrBookedMediaException#LentOrBookedMediaException(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="TooManyLoansOrBookingsException" location="1545,-31" size="312,43" id="exceptions/TooManyLoansOrBookingsException" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.9/@sourceConnections.0 //@children.10/@sourceConnections.0 //@children.1/@sourceConnections.0" name="Media" location="186,532" size="263,459" id="mediasManagement/Media" runTimeClassModel="addExemplary(I),currentMaxExemplary,exempTotal,isAvailableForLoan(),tabExemplaries,exempDispo,toHTML(Ljava.util.List;),type,toHtml(),isBook(),toString(),delExemplary(),title,isLent(),bookedExemplaries,equals(Ljava.lang.Object;),lend(LsubscribersManagement.Subscriber;LmediasManagement.Media;Ljava.util.Calendar;),returnExempMedia(I),getMediaHeader(),key,isDVD()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="221,144">
+      <children xsi:type="editmodel:AttributeEditModel" name="exempTotal" id="mediasManagement/Media#exempTotal"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="exempDispo" id="mediasManagement/Media#exempDispo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="key" id="mediasManagement/Media#key"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="title" id="mediasManagement/Media#title"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tabExemplaries" id="mediasManagement/Media#tabExemplaries"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="currentMaxExemplary" id="mediasManagement/Media#currentMaxExemplary"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="type" id="mediasManagement/Media#type"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bookedExemplaries" id="mediasManagement/Media#bookedExemplaries"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="240,252">
+      <children xsi:type="editmodel:MethodEditModel" name="equals" id="mediasManagement/Media#equals(Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isBook" id="mediasManagement/Media#isBook()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isDVD" id="mediasManagement/Media#isDVD()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="returnExempMedia" id="mediasManagement/Media#returnExempMedia(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="lend" id="mediasManagement/Media#lend(LsubscribersManagement.Subscriber;LmediasManagement.Media;Ljava.util.Calendar;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Media" id="mediasManagement/Media#Media(Ljava.lang.String;Ljava.lang.String;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addExemplary" id="mediasManagement/Media#addExemplary(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="delExemplary" id="mediasManagement/Media#delExemplary()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isLent" id="mediasManagement/Media#isLent()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="mediasManagement/Media#toString()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isAvailableForLoan" id="mediasManagement/Media#isAvailableForLoan()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toHTML" id="mediasManagement/Media#toHTML(Ljava.util.List;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMediaHeader" id="mediasManagement/Media#getMediaHeader()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toHtml" id="mediasManagement/Media#toHtml()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="mediasManagement/Media@media+bookingsManagement/Booking@booking" source="//@children.8" target="//@children.14" targetEnd="//@children.8/@sourceConnections.0/@children.1" label="//@children.8/@sourceConnections.0/@children.2" sourceEnd="//@children.8/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="media" location="155,459" id="mediasManagement/Media@media+bookingsManagement/Booking@booking|mediasManagement/Media#media" attachSource="true" multiplicityLabel="//@children.8/@sourceConnections.0/@children.0/@children.1" roleLabel="//@children.8/@sourceConnections.0/@children.0/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - media" location="347,997" size="44,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="313,997" size="20,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="booking" location="54,-1" id="mediasManagement/Media@media+bookingsManagement/Booking@booking|bookingsManagement/Booking#booking"/>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="DVD" location="-76,442" size="166,189" id="mediasManagement/DVD" runTimeClassModel="DVD(),outDate,directors,DVD(Ljava.lang.String;Ljava.util.ArrayList;Ljava.util.Calendar;ILjava.lang.String;),isDVD(),toString(),isBook(),toHtml()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="143,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="directors" id="mediasManagement/DVD#directors"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="outDate" id="mediasManagement/DVD#outDate"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="118,90">
+      <children xsi:type="editmodel:MethodEditModel" name="isBook" id="mediasManagement/DVD#isBook()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isDVD" id="mediasManagement/DVD#isDVD()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="mediasManagement/DVD#toString()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="DVD" id="mediasManagement/DVD#DVD()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toHtml" id="mediasManagement/DVD#toHtml()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="mediasManagement/Media&lt;-mediasManagement/DVD" source="//@children.9" target="//@children.8" targetEnd="//@children.9/@sourceConnections.0/@children.1" sourceEnd="//@children.9/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="166,139" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,49"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Book" location="-74,794" size="162,189" id="mediasManagement/Book" runTimeClassModel="authors,Book(),editionDate,Book(Ljava.lang.String;Ljava.util.ArrayList;Ljava.util.Calendar;ILjava.lang.String;),isDVD(),toString(),isBook(),toHtml()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="139,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="authors" id="mediasManagement/Book#authors"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="editionDate" id="mediasManagement/Book#editionDate"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="118,90">
+      <children xsi:type="editmodel:MethodEditModel" name="isBook" id="mediasManagement/Book#isBook()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isDVD" id="mediasManagement/Book#isDVD()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="mediasManagement/Book#toString()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Book" id="mediasManagement/Book#Book()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toHtml" id="mediasManagement/Book#toHtml()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="mediasManagement/Media&lt;-mediasManagement/Book" source="//@children.10" target="//@children.8" targetEnd="//@children.10/@sourceConnections.0/@children.1" sourceEnd="//@children.10/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="106,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,232"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MediaExistsException" location="1579,515" size="207,43" id="exceptions/MediaExistsException" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="TypeMedia" location="116,162" size="135,153" id="mediasManagement/TypeMedia" runTimeClassModel="label(),value(),value,fromValue(Ljava.lang.Integer;),label">
+    <children xsi:type="editmodel:CompartmentEditModel" size="95,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="value" id="mediasManagement/TypeMedia#value"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="label" id="mediasManagement/TypeMedia#label"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="85,54">
+      <children xsi:type="editmodel:MethodEditModel" name="fromValue" id="mediasManagement/TypeMedia#fromValue(Ljava.lang.Integer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="value" id="mediasManagement/TypeMedia#value()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="label" id="mediasManagement/TypeMedia#label()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="NotAnExemplaryException" location="1569,359" size="242,43" id="exceptions/NotAnExemplaryException" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.8/@sourceConnections.0" name="Booking" location="14,1170" size="194,243" id="bookingsManagement/Booking" runTimeClassModel="id,getBookingHeader(),bookingDate,toHTML(),cancelDate,equals(Ljava.lang.Object;),setAccounted(),Booking(),accounted,Booking(LsubscribersManagement.Subscriber;LmediasManagement.Media;),toString()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="145,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="accounted" id="bookingsManagement/Booking#accounted"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bookingDate" id="bookingsManagement/Booking#bookingDate"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="cancelDate" id="bookingsManagement/Booking#cancelDate"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="bookingsManagement/Booking#id"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="171,108">
+      <children xsi:type="editmodel:MethodEditModel" name="Booking" id="bookingsManagement/Booking#Booking(LsubscribersManagement.Subscriber;LmediasManagement.Media;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="equals" id="bookingsManagement/Booking#equals(Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toHTML" id="bookingsManagement/Booking#toHTML()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setAccounted" id="bookingsManagement/Booking#setAccounted()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Booking" id="bookingsManagement/Booking#Booking()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBookingHeader" id="bookingsManagement/Booking#getBookingHeader()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="subscribersManagement/Subscriber@booker+bookingsManagement/Booking@currentBookings" source="//@children.14" target="//@children.0" targetEnd="//@children.14/@sourceConnections.0/@children.2" label="//@children.14/@sourceConnections.0/@children.0" sourceEnd="//@children.14/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,13" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="currentBookings" location="194,22" id="subscribersManagement/Subscriber@booker+bookingsManagement/Booking@currentBookings|bookingsManagement/Booking#currentBookings" attachSource="true" multiplicityLabel="//@children.14/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.14/@sourceConnections.0/@children.1/@children.0" navigable="true" orderingKind="1">
+        <children xsi:type="editmodel:LabelEditModel" name=" + currentBookings" location="215,1172" size="104,13" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="215,1199" size="5,13" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="booker" location="0,472" id="subscribersManagement/Subscriber@booker+bookingsManagement/Booking@currentBookings|subscribersManagement/Subscriber#booker" multiplicityLabel="//@children.14/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.14/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - booker" location="643,1172" size="48,13" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="671,1199" size="20,13" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MediaAvailableException" location="1575,29" size="233,43" id="exceptions/MediaAvailableException" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="BookingAccountedException" location="1563,188" size="255,81" id="exceptions/BookingAccountedException" runTimeClassModel="BookingAccountedException(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="186,18">
+      <children xsi:type="editmodel:MethodEditModel" name="BookingAccountedException" id="exceptions/BookingAccountedException#BookingAccountedException(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="NoRightsException" location="1599,569" size="184,43" id="exceptions/NoRightsException" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="HibernateUtil" location="1289,359" size="211,99" id="utils/HibernateUtil" runTimeClassModel="sessionFactory,getSessionFactory()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="188,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="sessionFactory" id="utils/HibernateUtil#sessionFactory"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="130,18">
+      <children xsi:type="editmodel:MethodEditModel" name="getSessionFactory" id="utils/HibernateUtil#getSessionFactory()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.3" name="MediaManager" location="150,-102" size="299,135" id="mediasManagement/MediaManager" runTimeClassModel="addOrUpdateMedia(Lorg.hibernate.Session;LmediasManagement.Media;),getByKey(Lorg.hibernate.Session;Ljava.lang.String;),toHTML(Lorg.hibernate.Session;),toString(Lorg.hibernate.Session;),delMedia(Lorg.hibernate.Session;LmediasManagement.Media;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="276,72">
+      <children xsi:type="editmodel:MethodEditModel" name="addOrUpdateMedia" id="mediasManagement/MediaManager#addOrUpdateMedia(Lorg.hibernate.Session;LmediasManagement.Media;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="delMedia" id="mediasManagement/MediaManager#delMedia(Lorg.hibernate.Session;LmediasManagement.Media;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getByKey" id="mediasManagement/MediaManager#getByKey(Lorg.hibernate.Session;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toHTML" id="mediasManagement/MediaManager#toHTML(Lorg.hibernate.Session;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.2" name="LoanManager" location="450,-87" size="281,135" id="loansManagement/LoanManager" runTimeClassModel="delLoan(Lorg.hibernate.Session;LloansManagement.Loan;),toHTML(Lorg.hibernate.Session;),toString(Lorg.hibernate.Session;),addOrUpdateLoan(Lorg.hibernate.Session;LloansManagement.Loan;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="258,72">
+      <children xsi:type="editmodel:MethodEditModel" name="addOrUpdateLoan" id="loansManagement/LoanManager#addOrUpdateLoan(Lorg.hibernate.Session;LloansManagement.Loan;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="delLoan" id="loansManagement/LoanManager#delLoan(Lorg.hibernate.Session;LloansManagement.Loan;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="loansManagement/LoanManager#toString(Lorg.hibernate.Session;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toHTML" id="loansManagement/LoanManager#toHTML(Lorg.hibernate.Session;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="GenericEnumUserType" location="1049,359" size="211,297" id="utils/GenericEnumUserType" runTimeClassModel="nullSafeSet(Ljava.sql.PreparedStatement;Ljava.lang.Object;I),setParameterValues(Ljava.util.Properties;),replace(Ljava.lang.Object;Ljava.lang.Object;Ljava.lang.Object;),sqlTypes(),returnedClass(),hashCode(Ljava.lang.Object;),equals(Ljava.lang.Object;Ljava.lang.Object;),disassemble(Ljava.lang.Object;),deepCopy(Ljava.lang.Object;),isMutable(),assemble(Ljava.io.Serializable;Ljava.lang.Object;),sqlTypes,nullSafeGet(Ljava.sql.ResultSet;[Ljava.lang.String;Ljava.lang.Object;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="124,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="sqlTypes" id="utils/GenericEnumUserType#sqlTypes"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="139,216">
+      <children xsi:type="editmodel:MethodEditModel" name="assemble" id="utils/GenericEnumUserType#assemble(Ljava.io.Serializable;Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="deepCopy" id="utils/GenericEnumUserType#deepCopy(Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="disassemble" id="utils/GenericEnumUserType#disassemble(Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="equals" id="utils/GenericEnumUserType#equals(Ljava.lang.Object;Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="hashCode" location="62,187" id="utils/GenericEnumUserType#hashCode(Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isMutable" id="utils/GenericEnumUserType#isMutable()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="nullSafeGet" id="utils/GenericEnumUserType#nullSafeGet(Ljava.sql.ResultSet;[Ljava.lang.String;Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="nullSafeSet" id="utils/GenericEnumUserType#nullSafeSet(Ljava.sql.PreparedStatement;Ljava.lang.Object;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="replace" id="utils/GenericEnumUserType#replace(Ljava.lang.Object;Ljava.lang.Object;Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="returnedClass" id="utils/GenericEnumUserType#returnedClass()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setParameterValues" id="utils/GenericEnumUserType#setParameterValues(Ljava.util.Properties;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="sqlTypes" id="utils/GenericEnumUserType#sqlTypes()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.1" name="BookingManager" location="974,-99" size="376,189" id="bookingsManagement/BookingManager" runTimeClassModel="toHTML(Lorg.hibernate.Session;),getWaitingBooking(Lorg.hibernate.Session;LmediasManagement.Media;),toString(Lorg.hibernate.Session;),getBookings(Lorg.hibernate.Session;),addBooking(Lorg.hibernate.Session;LbookingsManagement.Booking;),delBooking(Lorg.hibernate.Session;LbookingsManagement.Booking;),getBookingFromBooker(Lorg.hibernate.Session;LsubscribersManagement.Subscriber;LmediasManagement.Media;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="353,126">
+      <children xsi:type="editmodel:MethodEditModel" name="addBooking" id="bookingsManagement/BookingManager#addBooking(Lorg.hibernate.Session;LbookingsManagement.Booking;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="delBooking" id="bookingsManagement/BookingManager#delBooking(Lorg.hibernate.Session;LbookingsManagement.Booking;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBookings" id="bookingsManagement/BookingManager#getBookings(Lorg.hibernate.Session;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="bookingsManagement/BookingManager#toString(Lorg.hibernate.Session;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBookingFromBooker" id="bookingsManagement/BookingManager#getBookingFromBooker(Lorg.hibernate.Session;LsubscribersManagement.Subscriber;LmediasManagement.Media;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getWaitingBooking" id="bookingsManagement/BookingManager#getWaitingBooking(Lorg.hibernate.Session;LmediasManagement.Media;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toHTML" id="bookingsManagement/BookingManager#toHTML(Lorg.hibernate.Session;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0" name="SubscriberManager" location="754,-87" size="239,171" id="subscribersManagement/SubscriberManager" runTimeClassModel="toHTML(Lorg.hibernate.Session;),addSubscriber(Lorg.hibernate.Session;LsubscribersManagement.Subscriber;),removeRights(Lorg.hibernate.Session;LsubscribersManagement.Subscriber;),delSubscriber(Lorg.hibernate.Session;LsubscribersManagement.Subscriber;),toString(Lorg.hibernate.Session;),getByNumber(Lorg.hibernate.Session;J)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="216,108">
+      <children xsi:type="editmodel:MethodEditModel" name="addSubscriber" id="subscribersManagement/SubscriberManager#addSubscriber(Lorg.hibernate.Session;LsubscribersManagement.Subscriber;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="delSubscriber" id="subscribersManagement/SubscriberManager#delSubscriber(Lorg.hibernate.Session;LsubscribersManagement.Subscriber;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getByNumber" id="subscribersManagement/SubscriberManager#getByNumber(Lorg.hibernate.Session;J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeRights" id="subscribersManagement/SubscriberManager#removeRights(Lorg.hibernate.Session;LsubscribersManagement.Subscriber;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="subscribersManagement/SubscriberManager#toString(Lorg.hibernate.Session;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toHTML" id="subscribersManagement/SubscriberManager#toHTML(Lorg.hibernate.Session;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" attributeSorter="Name" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="NotEnoughExemplariesException" location="1544,464" size="291,43" id="exceptions/NotEnoughExemplariesException" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="History" location="644,1364" size="207,405" id="historyManagement/History" runTimeClassModel="toHTML(),mediaMakers,exemplary,History(),mediaDate,History(LloansManagement.Loan;Ljava.util.Calendar;),loan,mediaKey,toString(),getHistoryHeader(),id,subsInscriptionDate,mediaTitle,loanReturnDate,subsFirstName,subsNumber,loanDate,subsBornDate,subsLastName">
+    <children xsi:type="editmodel:CompartmentEditModel" size="184,252">
+      <children xsi:type="editmodel:AttributeEditModel" name="subsFirstName" id="historyManagement/History#subsFirstName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="subsLastName" id="historyManagement/History#subsLastName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="subsBornDate" id="historyManagement/History#subsBornDate"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="subsInscriptionDate" id="historyManagement/History#subsInscriptionDate"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="subsNumber" id="historyManagement/History#subsNumber"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mediaTitle" id="historyManagement/History#mediaTitle"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mediaMakers" id="historyManagement/History#mediaMakers"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mediaDate" id="historyManagement/History#mediaDate"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mediaKey" id="historyManagement/History#mediaKey"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanDate" id="historyManagement/History#loanDate"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanReturnDate" id="historyManagement/History#loanReturnDate"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="exemplary" id="historyManagement/History#exemplary"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loan" id="historyManagement/History#loan"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="historyManagement/History#id"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="165,90">
+      <children xsi:type="editmodel:MethodEditModel" name="History" id="historyManagement/History#History()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="History" id="historyManagement/History#History(LloansManagement.Loan;Ljava.util.Calendar;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="historyManagement/History#toString()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getHistoryHeader" id="historyManagement/History#getHistoryHeader()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toHTML" id="historyManagement/History#toHTML()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.4" name="HistoryManager" location="1154,179" size="199,117" id="historyManagement/HistoryManager" runTimeClassModel="toHTML(Lorg.hibernate.Session;),addHistory(Lorg.hibernate.Session;LhistoryManagement.History;),toString(Lorg.hibernate.Session;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="176,54">
+      <children xsi:type="editmodel:MethodEditModel" name="addHistory" id="historyManagement/HistoryManager#addHistory(Lorg.hibernate.Session;LhistoryManagement.History;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="historyManagement/HistoryManager#toString(Lorg.hibernate.Session;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toHTML" id="historyManagement/HistoryManager#toHTML(Lorg.hibernate.Session;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ContextListener" location="1436,690" size="162,99" id="web/ContextListener" runTimeClassModel="contextInitialized(Ljavax.servlet.ServletContextEvent;),contextDestroyed(Ljavax.servlet.ServletContextEvent;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="127,36">
+      <children xsi:type="editmodel:MethodEditModel" name="contextDestroyed" id="web/ContextListener#contextDestroyed(Ljavax.servlet.ServletContextEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="contextInitialized" id="web/ContextListener#contextInitialized(Ljavax.servlet.ServletContextEvent;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="AddSubscriberServlet" location="1125,847" size="317,81" id="web/AddSubscriberServlet" runTimeClassModel="">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="294,18">
+      <children xsi:type="editmodel:MethodEditModel" name="doPost" id="web/AddSubscriberServlet#doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" showMethodsReturnType="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="AddMediaServlet" location="1124,927" size="317,81" id="web/AddMediaServlet" runTimeClassModel="doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="294,18">
+      <children xsi:type="editmodel:MethodEditModel" name="doPost" id="web/AddMediaServlet#doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="AddExemplaryServlet" location="1124,794" size="317,81" id="web/AddExemplaryServlet" runTimeClassModel="doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="294,18">
+      <children xsi:type="editmodel:MethodEditModel" name="doPost" id="web/AddExemplaryServlet#doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="BookServlet" location="1120,1020" size="317,81" id="web/BookServlet" runTimeClassModel="doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="294,18">
+      <children xsi:type="editmodel:MethodEditModel" name="doPost" id="web/BookServlet#doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ConnexionServlet" location="1114,1079" size="317,81" id="web/ConnexionServlet" runTimeClassModel="doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="294,18">
+      <children xsi:type="editmodel:MethodEditModel" name="doPost" id="web/ConnexionServlet#doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="DeconnexionServlet" location="1544,865" size="313,81" id="web/DeconnexionServlet" runTimeClassModel="doGet(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="290,18">
+      <children xsi:type="editmodel:MethodEditModel" name="doGet" id="web/DeconnexionServlet#doGet(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="DeleteExemplaryServlet" location="1119,1245" size="317,81" id="web/DeleteExemplaryServlet" runTimeClassModel="doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="294,18">
+      <children xsi:type="editmodel:MethodEditModel" name="doPost" id="web/DeleteExemplaryServlet#doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="DeleteMediaServlet" location="1506,1035" size="317,81" id="web/DeleteMediaServlet" runTimeClassModel="doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="294,18">
+      <children xsi:type="editmodel:MethodEditModel" name="doPost" id="web/DeleteMediaServlet#doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="DeleteSubscriberServlet" location="1112,1139" size="317,81" id="web/DeleteSubscriberServlet" runTimeClassModel="doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="294,18">
+      <children xsi:type="editmodel:MethodEditModel" name="doPost" id="web/DeleteSubscriberServlet#doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="LendServlet" location="1200,681" size="317,81" id="web/LendServlet" runTimeClassModel="doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="294,18">
+      <children xsi:type="editmodel:MethodEditModel" name="doPost" id="web/LendServlet#doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="LookForMedia" location="1529,935" size="317,81" id="web/LookForMedia" runTimeClassModel="doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="294,18">
+      <children xsi:type="editmodel:MethodEditModel" name="doPost" id="web/LookForMedia#doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="LookForSubs" location="1506,1110" size="317,81" id="web/LookForSubs" runTimeClassModel="doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="294,18">
+      <children xsi:type="editmodel:MethodEditModel" name="doPost" id="web/LookForSubs#doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ReturnExemplaryServlet" location="1500,1213" size="317,81" id="web/ReturnExemplaryServlet" runTimeClassModel="doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="294,18">
+      <children xsi:type="editmodel:MethodEditModel" name="doPost" id="web/ReturnExemplaryServlet#doPost(Ljavax.servlet.http.HttpServletRequest;Ljavax.servlet.http.HttpServletResponse;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" showMethodsParameterTypes="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

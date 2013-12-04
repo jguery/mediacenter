@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="loansManagement">
+    <class name="Loan" table="LOANS">
+        <id name="id" column="id" type="long" unsaved-value="undefined">
+            <generator class="increment" />
+        </id>
+        
+        <property name="voidLoan" column="voidLoan" type="boolean" />   
+        <property name="returnDate" column="returnDate" type="calendar" />   
+        <property name="exemplary" column="exemplary" type="integer" />
+        
+        <!-- The cascade attribute update the media when the loan is updated or created -->
+        <many-to-one name="media" class="mediasManagement.Media" cascade="all" lazy="false" column="media" />
+        
+        <many-to-one name="lender" cascade="save-update" column="lender" lazy="false" class="subscribersManagement.Subscriber" />
+        
+    </class>
+</hibernate-mapping>
